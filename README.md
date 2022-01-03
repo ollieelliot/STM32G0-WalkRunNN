@@ -1,7 +1,7 @@
 # Motion detection on an STM32G0 microcontroller
 
 # Hardware: 
-  - The Schematic and PCB is designed in KiCad
+  - The Schematic and PCB is designed in KiCad and uses the STM32G041J6M6 ARM Cortex-M0 Microcontroller together with an MPU6050 (Gyroscope and Accelerometer).
 
 # Software:
 - Uses a neural network trained in Python and [emlearn](https://github.com/emlearn/emlearn) to save the weights, biases and activation functions to a header file in order to run inference in C (C99).
