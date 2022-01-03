@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name STM32G0)(type KiCad)(uri /Users/oliver/Documents/Github/STM32G0_VoiceRecognition/STM32G0_VoiceRecognition/Libraries/STM32G041J6_Lib/footprints.pretty)(options "")(descr ""))
+)

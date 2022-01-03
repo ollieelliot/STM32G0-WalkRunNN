@@ -1,0 +1,13 @@
+STM32G0 total all pins: 80mA
+
+MPU6050 operating: 3.6mA
+
+Linear voltage regulator: approx. 0mA
+
+Red LED: 1.6mA
+
+Approx. for second LED (not chosen): 1.3mA
+
+____________________________________
+
+Estimated total voltage: 86.5mA
