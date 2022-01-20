@@ -12,4 +12,4 @@
 ![3D View](https://github.com/ollieelliot/STM32G0-WalkRunNN/blob/main/Documentation_Photos_etc/V_1_1_pic3.jpg)
 
 Currently everything except the MPU6050 is soldered due to delayed shipment. 
-Guitar pic for reference :)
+Guitar pick for reference :)
