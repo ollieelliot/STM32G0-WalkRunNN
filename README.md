@@ -11,6 +11,6 @@
 
 ![3D View](https://github.com/ollieelliot/STM32G0-WalkRunNN/blob/main/Documentation_Photos_etc/STM32G0_MPU6050-1.png)
 
-![3D View](https://github.com/ollieelliot/STM32G0-WalkRunNN/blob/main/Documentation_Photos_etc/V_1_1_pic1.jpg)
+![3D View](https://github.com/ollieelliot/STM32G0-WalkRunNN/blob/main/Documentation_Photos_etc/V_1_1_pic2.jpg)
 
 Currently everything except the MPU6050 is soldered due to delayed shipment. 
