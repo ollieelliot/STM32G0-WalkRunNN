@@ -6,6 +6,8 @@
 
   (title_block
     (title "STM32G041J6 + MPU6050")
+    (date "2022-01-02")
+    (rev "1.0")
     (company "github.com/ollieelliot")
   )
 
