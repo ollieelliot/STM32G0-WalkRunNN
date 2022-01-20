@@ -28,9 +28,7 @@ Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_flash_ex.o: \
  C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c.h \
  C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c_ex.h \
  C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h \
- C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h \
- C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h \
- C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h
+ C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h
 
 C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h:
 
@@ -89,7 +87,3 @@ C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Driv
 C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h:
 
 C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h:
-
-C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h:
-
-C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h:
