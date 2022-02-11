@@ -19,6 +19,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "TJ_MPU6050.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -56,6 +57,13 @@ static void MX_I2C2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+RawData_Def AccelRaw, GyroRaw;
+ScaledData_Def AccelScaled, GyroScaled, AccelCali;
+
+//float SCALING_FACTOR_2g = 2000.0f/32768.0f;
+//float SCALING_FACTOR_4g = 4000.0f/32768.0f;
+float SCALING_FACTOR_8g = 8000.0f/32768.0f;
+//float SCALING_FACTOR_16g = 2000.0f/32768.0f;
 
 /* USER CODE END 0 */
 
@@ -67,6 +75,21 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
 
+	MPU_ConfigTypeDef MpuConfig;
+
+	//float gyro_x;
+	//float gyro_y;
+	//float gyro_z;
+
+	float accel_x;
+	float accel_y;
+	float accel_z;
+
+
+
+	//int predictions = 0;
+
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -75,6 +98,20 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
+
+
+  MPU6050_Init(&hi2c2);
+  //2. Configure Accel and Gyro parameters
+  MpuConfig.Accel_Full_Scale = AFS_SEL_2g;
+  MpuConfig.ClockSource = Internal_8MHz;
+  MpuConfig.CONFIG_DLPF = DLPF_5_Hz;
+  MpuConfig.Gyro_Full_Scale = FS_SEL_250;
+  MpuConfig.Sleep_Mode_Bit = 0;  //1: sleep mode, 0: normal mode
+  MPU6050_Config(&MpuConfig);
+
+  //_Accel_Cali(63, 85, 14, 28, 833, 850); //Calibrate the accelerometer
+
+
 
   /* USER CODE END Init */
 
@@ -99,9 +136,79 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+	  /*
+	  //Scaled data
+
+	  MPU6050_Get_Accel_Cali(&AccelCali);
+	  //MPU6050_Get_Accel_Scale(&AccelScaled);
+	  //MPU6050_Get_Gyro_Scale(&GyroScaled);
+
+	  //gyro_x = GyroScaled.x;
+      //gyro_y = GyroScaled.y;
+	  //gyro_z = GyroScaled.z;
+
+	  accel_x = AccelCali.x * SCALING_FACTOR_8g;
+	  accel_y = AccelCali.y;
+	  accel_z = AccelCali.z;
+
+
+
+	  float input_data[3] = {accel_x, accel_y, accel_z};	//Scale down and subtract offset, accel_y/15 - 115, accel_z/15 - 75
+	  //< accel_x < 123
+
+	  if(input_data[2] > -1 && input_data[2] < 1)
+		  HAL_GPIO_WritePin(STATUS_GPIO_Port, STATUS_Pin, GPIO_PIN_SET);
+	  else
+		  HAL_GPIO_WritePin(STATUS_GPIO_Port, STATUS_Pin, GPIO_PIN_RESET);
+
+
+
+
+	  //int32_t prediction = eml_net_predict(&runwalkNN_acc, input_data, 3);
+
+	  /* Activate LED if enough running predictions where done within some time frame */
+	  /*
+	  if(prediction == 1)
+	  {
+		  predictions = predictions + 3;
+		  if(predictions > 100)
+			  predictions = 100;
+	  }
+
+	  else
+	  {
+		  predictions--;
+		  if(predictions < 0)
+			  predictions = 0;
+	  }
+
+
+	  if (predictions >= 50)
+		  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+	  else
+		  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+
+
+	  bufflen = sprintf(buff, "a_x: %f, a_y: %f, a_z: %f, Prediction: %ld \r", input_data[0], input_data[1], input_data[2], prediction);
+	  HAL_UART_Transmit(&huart2, (uint8_t *)buff, bufflen, 100);
+	  */
+	  //HAL_Delay(10);
+
+
+
 	  //HAL_GPIO_TogglePin(STATUS2_GPIO_Port, STATUS2_Pin);
 	  HAL_GPIO_TogglePin(STATUS_GPIO_Port, STATUS_Pin);
+	  HAL_Delay(100);
+	  HAL_GPIO_TogglePin(STATUS_GPIO_Port, STATUS_Pin);
+	  HAL_Delay(100);
+	  HAL_GPIO_TogglePin(STATUS_GPIO_Port, STATUS_Pin);
+	  HAL_Delay(100);
+	  HAL_GPIO_TogglePin(STATUS_GPIO_Port, STATUS_Pin);
 	  HAL_Delay(500);
+
+
+
 
 
 
