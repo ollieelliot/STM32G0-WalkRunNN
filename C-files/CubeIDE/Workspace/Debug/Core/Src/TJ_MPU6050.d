@@ -27,7 +27,9 @@ Core/Src/TJ_MPU6050.o: ../Core/Src/TJ_MPU6050.c ../Core/Src/TJ_MPU6050.h \
  C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c.h \
  C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_i2c_ex.h \
  C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h \
- C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h
+ C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h \
+ C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h \
+ C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h
 
 ../Core/Src/TJ_MPU6050.h:
 
@@ -88,3 +90,7 @@ C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Driv
 C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr.h:
 
 C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h:
+
+C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim.h:
+
+C:/Users/Ollie/Documents/GitHub/STM32G0-WalkRunNN/C-files/CubeIDE/Workspace/Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_tim_ex.h:

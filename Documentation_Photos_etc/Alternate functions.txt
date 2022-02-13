@@ -1,0 +1,1 @@
+STM32G041 Datasheet, Sida 40 (NRST, Alternate functions)
